@@ -1,0 +1,330 @@
+.workouts-container {
+    width: 100%;
+    flex: 1;
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.workouts-title {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+.workouts-card {
+    background-color: var(--bg-card);
+    border: 2px solid var(--accent-orange);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.workouts-card h3 {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.workout-empty-msg {
+    margin-top: 1rem;
+}
+
+.workouts-list {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.workout-item-card {
+    justify-content: space-between;
+}
+
+.workout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.workout-form input {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--accent-orange);
+    background-color: var(--border-hover);
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.workout-builder-section {
+    border-top: 1px solid var(--border-hover);
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.workout-exercise-select {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--accent-orange);
+    background-color: var(--border-hover);
+    color: var(--text-primary);
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.set-inputs {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.save-btn {
+    background-color: var(--accent-orange);
+    color: var(--text-primary);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    box-sizing: border-box;
+    align-self: center;
+    width: 100%;
+}
+
+.save-btn:hover {
+    background-color: var(--accent-orange-hover);
+}
+
+.add-set-btn {
+    width: 150px;
+}
+
+.finish-btn {
+    background-color: transparent;
+    border: 1px solid var(--accent-orange);
+    color: var(--accent-orange);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.finish-btn:hover {
+    background-color: var(--accent-orange);
+    color: white;
+}
+
+.cancel-full-btn {
+    width: 100%;
+}
+
+.logged-sets-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.draft-sets-ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.draft-set-li {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--border-hover);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    color: var(--text-primary);
+}
+
+.status-text {
+    font-size: 0.9rem;
+    color: var(--accent-orange);
+    font-weight: 500;
+}
+
+.form-actions-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.no-data-text {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.muscle-card {
+    background-color: var(--border-hover);
+    border: 1px solid var(--accent-orange);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.muscle-name {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.max-lift {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.dropdown-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.workout-exercise-select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--accent-orange);
+    background-color: var(--border-hover);
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.workout-exercise-select optgroup {
+    font-weight: 700;
+    color: var(--accent-orange);
+    background-color: var(--bg-card);
+    padding: 10px;
+}
+
+.workout-exercise-select option {
+    padding: 10px;
+    background-color: var(--border-hover);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+
+
+}
+
+.custom-dropdown-container {
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.custom-dropdown-selected {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--accent-orange);
+    background-color: var(--border-hover);
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    font-size: 0.8rem;
+    color: var(--accent-orange);
+}
+
+.custom-dropdown-list {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: var(--bg-card);
+    border: 2px solid var(--accent-orange);
+    border-radius: 8px;
+    z-index: 100;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-group-title {
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: var(--accent-orange);
+    background-color: rgba(255, 120, 0, 0.1);
+    letter-spacing: 0.5px;
+}
+
+.dropdown-item {
+    padding: 0.75rem 1rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--border-hover);
+    color: var(--accent-orange);
+}
+
+.draft-set-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-exercise-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.remove-exercise-btn:hover {
+    color: #ff4d4d;
+    background-color: rgba(255, 77, 77, 0.1);
+}
