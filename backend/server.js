@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
@@ -9,11 +10,11 @@ const cors = require('cors');
 app.use(cors());
 
 const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'workout_app',
-    password: '***REMOVED***',
-    port: 5432
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT
 });
 
 app.use(express.json());
